@@ -1,0 +1,1 @@
+console.log('this is from i18n cli')

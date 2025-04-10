@@ -1,0 +1,14 @@
+{
+  "name": "@i18n-extract/playground-js",
+  "version": "0.1.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "i18n": "i18n"
+  },
+  "devDependencies": {
+    "@i18n-extract/cli": "workspace:*"
+  }
+}

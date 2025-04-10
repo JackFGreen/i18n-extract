@@ -1,0 +1,13 @@
+{
+  "name": "@i18n-extract/cli",
+  "private": true,
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "bin": {
+    "i18n": "./bin/i18n.js"
+  },
+  "scripts": {},
+  "dependencies": {
+    "commander": "^13.1.0"
+  }
+}
