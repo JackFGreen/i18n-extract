@@ -1,0 +1,50 @@
+{
+  "type": "Module",
+  "span": {
+    "start": 1,
+    "end": 29
+  },
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 1,
+        "end": 29
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 7,
+            "end": 29
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 7,
+              "end": 11
+            },
+            "ctxt": 2,
+            "value": "i18n",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "StringLiteral",
+            "span": {
+              "start": 14,
+              "end": 29
+            },
+            "value": "i8n-js 测试",
+            "raw": "'i8n-js 测试'"
+          },
+          "definite": false
+        }
+      ]
+    }
+  ],
+  "interpreter": null
+}

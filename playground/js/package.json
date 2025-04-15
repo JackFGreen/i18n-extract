@@ -6,7 +6,8 @@
   "license": "ISC",
   "description": "",
   "scripts": {
-    "i18n": "i18n"
+    "i18n:parse": "i18n parse src/index.js",
+    "i18n:print": "i18n print src/index.js.ast.json"
   },
   "devDependencies": {
     "@i18n-extract/cli": "workspace:*"

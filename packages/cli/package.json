@@ -8,6 +8,7 @@
   },
   "scripts": {},
   "dependencies": {
+    "@swc/core": "^1.11.21",
     "commander": "^13.1.0"
   }
 }
