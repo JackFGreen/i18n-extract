@@ -26,7 +26,9 @@ program
     }
 
     if (options.dir) {
-      runInDirectory(root, options.dir, (filePath) => {
+      const dirPath = path.join(root, options.dir)
+
+      runInDirectory(dirPath, (filePath) => {
         if (/\.ast\.json/.test(filePath)) {
           return
         }
@@ -54,7 +56,9 @@ program
     }
 
     if (options.dir) {
-      runInDirectory(root, options.dir, (filePath) => {
+      const dirPath = path.join(root, options.dir)
+
+      runInDirectory(dirPath, (filePath) => {
         if (/\.ast\.json$/.test(filePath)) {
           print(filePath)
         }

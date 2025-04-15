@@ -1,8 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 
-function runInDirectory(pre, cur, cb) {
-  const dirPath = path.join(pre, cur)
+function runInDirectory(dirPath, cb) {
   const files = fs.readdirSync(dirPath)
 
   console.group('Directory:', dirPath)
@@ -14,7 +13,7 @@ function runInDirectory(pre, cur, cb) {
     const isDirectory = stat.isDirectory()
 
     if (isDirectory) {
-      runInDirectory(dirPath, file, cb)
+      runInDirectory(path.join(dirPath, file), cb)
     }
 
     if (stat.isFile()) {
