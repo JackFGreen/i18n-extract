@@ -1,18 +1,22 @@
-const swc = require('@swc/core')
+const fs = require('fs')
+const path = require('path')
+const compile = require('./compile')
 
-async function parse({ code }) {
-  const m = await swc.parse(code,{
-    fileName: 'i18n.js',
-  })
-  return m
+function parse(filePath) {
+  console.group('[parse] file to AST:', filePath)
+  const code = fs.readFileSync(filePath, 'utf-8')
+
+  const ast = compile.parse({ code })
+  const str = JSON.stringify(ast, null, 2)
+
+  const astFilePath = filePath + '.ast.json'
+
+  console.log('[parse] write AST to:', astFilePath)
+
+  fs.writeFileSync(astFilePath, str, 'utf-8')
+
+  console.log('[parse] write AST done!')
+  console.groupEnd()
 }
 
-async function print({ ast }) {
-  const m = await swc.print(ast)
-  return m
-}
-
-module.exports = {
-  parse,
-  print,
-}
+module.exports = parse

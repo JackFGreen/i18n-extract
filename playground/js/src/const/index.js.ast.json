@@ -1,0 +1,220 @@
+{
+  "type": "Module",
+  "span": {
+    "start": 1,
+    "end": 96
+  },
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 1,
+        "end": 29
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 7,
+            "end": 29
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 7,
+              "end": 11
+            },
+            "ctxt": 2,
+            "value": "i18n",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "StringLiteral",
+            "span": {
+              "start": 14,
+              "end": 29
+            },
+            "value": "i8n-js 测试",
+            "raw": "'i8n-js 测试'"
+          },
+          "definite": false
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 31,
+        "end": 42
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 37,
+            "end": 42
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 37,
+              "end": 38
+            },
+            "ctxt": 2,
+            "value": "a",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "NumericLiteral",
+            "span": {
+              "start": 41,
+              "end": 42
+            },
+            "value": 1,
+            "raw": "1"
+          },
+          "definite": false
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 43,
+        "end": 61
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 49,
+            "end": 61
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 49,
+              "end": 50
+            },
+            "ctxt": 2,
+            "value": "b",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "StringLiteral",
+            "span": {
+              "start": 53,
+              "end": 61
+            },
+            "value": "你好",
+            "raw": "'你好'"
+          },
+          "definite": false
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 62,
+        "end": 96
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 68,
+            "end": 96
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 68,
+              "end": 69
+            },
+            "ctxt": 2,
+            "value": "c",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "span": {
+              "start": 72,
+              "end": 96
+            },
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "span": {
+                "start": 72,
+                "end": 73
+              },
+              "ctxt": 2,
+              "value": "a",
+              "optional": false
+            },
+            "right": {
+              "type": "TemplateLiteral",
+              "span": {
+                "start": 76,
+                "end": 96
+              },
+              "expressions": [
+                {
+                  "type": "Identifier",
+                  "span": {
+                    "start": 86,
+                    "end": 87
+                  },
+                  "ctxt": 2,
+                  "value": "b",
+                  "optional": false
+                }
+              ],
+              "quasis": [
+                {
+                  "type": "TemplateElement",
+                  "span": {
+                    "start": 77,
+                    "end": 84
+                  },
+                  "tail": false,
+                  "cooked": "哈哈-",
+                  "raw": "哈哈-"
+                },
+                {
+                  "type": "TemplateElement",
+                  "span": {
+                    "start": 88,
+                    "end": 95
+                  },
+                  "tail": true,
+                  "cooked": "-哈哈",
+                  "raw": "-哈哈"
+                }
+              ]
+            }
+          },
+          "definite": false
+        }
+      ]
+    }
+  ],
+  "interpreter": null
+}

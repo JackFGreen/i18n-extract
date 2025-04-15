@@ -1,0 +1,487 @@
+{
+  "type": "Module",
+  "span": {
+    "start": 98,
+    "end": 289
+  },
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "identifier": {
+        "type": "Identifier",
+        "span": {
+          "start": 107,
+          "end": 109
+        },
+        "ctxt": 2,
+        "value": "fn",
+        "optional": false
+      },
+      "declare": false,
+      "params": [],
+      "decorators": [],
+      "span": {
+        "start": 98,
+        "end": 139
+      },
+      "ctxt": 3,
+      "body": {
+        "type": "BlockStatement",
+        "span": {
+          "start": 112,
+          "end": 139
+        },
+        "ctxt": 3,
+        "stmts": [
+          {
+            "type": "ExpressionStatement",
+            "span": {
+              "start": 116,
+              "end": 137
+            },
+            "expression": {
+              "type": "CallExpression",
+              "span": {
+                "start": 116,
+                "end": 137
+              },
+              "ctxt": 0,
+              "callee": {
+                "type": "MemberExpression",
+                "span": {
+                  "start": 116,
+                  "end": 127
+                },
+                "object": {
+                  "type": "Identifier",
+                  "span": {
+                    "start": 116,
+                    "end": 123
+                  },
+                  "ctxt": 1,
+                  "value": "console",
+                  "optional": false
+                },
+                "property": {
+                  "type": "Identifier",
+                  "span": {
+                    "start": 124,
+                    "end": 127
+                  },
+                  "value": "log"
+                }
+              },
+              "arguments": [
+                {
+                  "spread": null,
+                  "expression": {
+                    "type": "StringLiteral",
+                    "span": {
+                      "start": 128,
+                      "end": 136
+                    },
+                    "value": "你好",
+                    "raw": "'你好'"
+                  }
+                }
+              ],
+              "typeArguments": null
+            }
+          }
+        ]
+      },
+      "generator": false,
+      "async": false,
+      "typeParameters": null,
+      "returnType": null
+    },
+    {
+      "type": "FunctionDeclaration",
+      "identifier": {
+        "type": "Identifier",
+        "span": {
+          "start": 150,
+          "end": 152
+        },
+        "ctxt": 2,
+        "value": "fn",
+        "optional": false
+      },
+      "declare": false,
+      "params": [
+        {
+          "type": "Parameter",
+          "span": {
+            "start": 153,
+            "end": 165
+          },
+          "decorators": [],
+          "pat": {
+            "type": "AssignmentPattern",
+            "span": {
+              "start": 153,
+              "end": 165
+            },
+            "left": {
+              "type": "Identifier",
+              "span": {
+                "start": 153,
+                "end": 154
+              },
+              "ctxt": 4,
+              "value": "a",
+              "optional": false,
+              "typeAnnotation": null
+            },
+            "right": {
+              "type": "StringLiteral",
+              "span": {
+                "start": 157,
+                "end": 165
+              },
+              "value": "哈哈",
+              "raw": "'哈哈'"
+            }
+          }
+        },
+        {
+          "type": "Parameter",
+          "span": {
+            "start": 167,
+            "end": 179
+          },
+          "decorators": [],
+          "pat": {
+            "type": "AssignmentPattern",
+            "span": {
+              "start": 167,
+              "end": 179
+            },
+            "left": {
+              "type": "Identifier",
+              "span": {
+                "start": 167,
+                "end": 168
+              },
+              "ctxt": 4,
+              "value": "b",
+              "optional": false,
+              "typeAnnotation": null
+            },
+            "right": {
+              "type": "StringLiteral",
+              "span": {
+                "start": 171,
+                "end": 179
+              },
+              "value": "嘿嘿",
+              "raw": "'嘿嘿'"
+            }
+          }
+        }
+      ],
+      "decorators": [],
+      "span": {
+        "start": 141,
+        "end": 214
+      },
+      "ctxt": 4,
+      "body": {
+        "type": "BlockStatement",
+        "span": {
+          "start": 181,
+          "end": 214
+        },
+        "ctxt": 4,
+        "stmts": [
+          {
+            "type": "ExpressionStatement",
+            "span": {
+              "start": 185,
+              "end": 212
+            },
+            "expression": {
+              "type": "CallExpression",
+              "span": {
+                "start": 185,
+                "end": 212
+              },
+              "ctxt": 0,
+              "callee": {
+                "type": "MemberExpression",
+                "span": {
+                  "start": 185,
+                  "end": 196
+                },
+                "object": {
+                  "type": "Identifier",
+                  "span": {
+                    "start": 185,
+                    "end": 192
+                  },
+                  "ctxt": 1,
+                  "value": "console",
+                  "optional": false
+                },
+                "property": {
+                  "type": "Identifier",
+                  "span": {
+                    "start": 193,
+                    "end": 196
+                  },
+                  "value": "log"
+                }
+              },
+              "arguments": [
+                {
+                  "spread": null,
+                  "expression": {
+                    "type": "StringLiteral",
+                    "span": {
+                      "start": 197,
+                      "end": 205
+                    },
+                    "value": "你好",
+                    "raw": "'你好'"
+                  }
+                },
+                {
+                  "spread": null,
+                  "expression": {
+                    "type": "Identifier",
+                    "span": {
+                      "start": 207,
+                      "end": 208
+                    },
+                    "ctxt": 4,
+                    "value": "a",
+                    "optional": false
+                  }
+                },
+                {
+                  "spread": null,
+                  "expression": {
+                    "type": "Identifier",
+                    "span": {
+                      "start": 210,
+                      "end": 211
+                    },
+                    "ctxt": 4,
+                    "value": "b",
+                    "optional": false
+                  }
+                }
+              ],
+              "typeArguments": null
+            }
+          }
+        ]
+      },
+      "generator": false,
+      "async": false,
+      "typeParameters": null,
+      "returnType": null
+    },
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 216,
+        "end": 227
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 222,
+            "end": 227
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 222,
+              "end": 223
+            },
+            "ctxt": 2,
+            "value": "a",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "NumericLiteral",
+            "span": {
+              "start": 226,
+              "end": 227
+            },
+            "value": 1,
+            "raw": "1"
+          },
+          "definite": false
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 228,
+        "end": 246
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 234,
+            "end": 246
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 234,
+              "end": 235
+            },
+            "ctxt": 2,
+            "value": "b",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "StringLiteral",
+            "span": {
+              "start": 238,
+              "end": 246
+            },
+            "value": "啊啊",
+            "raw": "'啊啊'"
+          },
+          "definite": false
+        }
+      ]
+    },
+    {
+      "type": "VariableDeclaration",
+      "span": {
+        "start": 247,
+        "end": 289
+      },
+      "ctxt": 0,
+      "kind": "const",
+      "declare": false,
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "span": {
+            "start": 253,
+            "end": 289
+          },
+          "id": {
+            "type": "Identifier",
+            "span": {
+              "start": 253,
+              "end": 254
+            },
+            "ctxt": 2,
+            "value": "c",
+            "optional": false,
+            "typeAnnotation": null
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "span": {
+              "start": 257,
+              "end": 289
+            },
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "span": {
+                "start": 257,
+                "end": 258
+              },
+              "ctxt": 2,
+              "value": "a",
+              "optional": false
+            },
+            "right": {
+              "type": "TemplateLiteral",
+              "span": {
+                "start": 261,
+                "end": 289
+              },
+              "expressions": [
+                {
+                  "type": "Identifier",
+                  "span": {
+                    "start": 271,
+                    "end": 272
+                  },
+                  "ctxt": 2,
+                  "value": "b",
+                  "optional": false
+                },
+                {
+                  "type": "CallExpression",
+                  "span": {
+                    "start": 276,
+                    "end": 280
+                  },
+                  "ctxt": 0,
+                  "callee": {
+                    "type": "Identifier",
+                    "span": {
+                      "start": 276,
+                      "end": 278
+                    },
+                    "ctxt": 2,
+                    "value": "fn",
+                    "optional": false
+                  },
+                  "arguments": [],
+                  "typeArguments": null
+                }
+              ],
+              "quasis": [
+                {
+                  "type": "TemplateElement",
+                  "span": {
+                    "start": 262,
+                    "end": 269
+                  },
+                  "tail": false,
+                  "cooked": "哈哈-",
+                  "raw": "哈哈-"
+                },
+                {
+                  "type": "TemplateElement",
+                  "span": {
+                    "start": 273,
+                    "end": 274
+                  },
+                  "tail": false,
+                  "cooked": "-",
+                  "raw": "-"
+                },
+                {
+                  "type": "TemplateElement",
+                  "span": {
+                    "start": 281,
+                    "end": 288
+                  },
+                  "tail": true,
+                  "cooked": "-哈哈",
+                  "raw": "-哈哈"
+                }
+              ]
+            }
+          },
+          "definite": false
+        }
+      ]
+    }
+  ],
+  "interpreter": null
+}

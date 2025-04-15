@@ -4,54 +4,65 @@ const { Command } = require('commander')
 const program = new Command()
 const pkg = require('../package.json')
 const { name, version } = pkg
-const { parse, print } = require('./parse')
+const parse = require('./parse')
+const print = require('./print')
+const { runInDirectory } = require('./utils')
 
 program.name(name).version(version)
 
 program
   .command('parse')
   .description('Parse code to AST')
-  .argument('<file>', 'file path')
-  .action(async (url, options) => {
+  .argument('[file]', 'file path')
+  .option('-d, --dir <directory>', 'directory path')
+  .action((url, options) => {
     const root = process.cwd()
-    const filePath = path.join(root, url)
 
-    console.log('[parse] file to AST:', filePath)
-    const code = fs.readFileSync(filePath, 'utf-8')
+    console.group('---parse start---')
 
-    const ast = await parse({ code })
-    const str = JSON.stringify(ast, null, 2)
+    if (url) {
+      const filePath = path.join(root, url)
+      parse(filePath)
+    }
 
-    const astFilePath = filePath + '.ast.json'
+    if (options.dir) {
+      runInDirectory(root, options.dir, (filePath) => {
+        if (/\.ast\.json/.test(filePath)) {
+          return
+        }
+        parse(filePath)
+      })
+    }
 
-    console.log('[parse] write AST to:', astFilePath)
-    fs.writeFileSync(astFilePath, str, 'utf-8')
-    console.log('[parse] write AST done!')
+    console.log('---parse end---')
+    console.groupEnd()
   })
 
 program
   .command('print')
   .description('Print AST to code')
-  .argument('<file>', 'file path')
-  .action(async (url, options) => {
+  .argument('[file]', 'file path')
+  .option('-d, --dir <directory>', 'directory path')
+  .action((url, options) => {
     const root = process.cwd()
-    const filePath = path.join(root, url)
 
-    console.log('[print] AST file to code:', filePath)
-    const ast = fs.readFileSync(filePath, 'utf-8')
+    console.group('---print start---')
 
-    const { code } = await print({ ast: JSON.parse(ast) })
+    if (url) {
+      const filePath = path.join(root, url)
+      print(filePath)
+    }
 
-    const originFilePath = filePath.replace('.ast.json', '')
-    const originFileNames = originFilePath.split('.')
-    const codeASTFilePath = [...originFileNames.slice(0, -1), 'ast.json', originFileNames.at(-1)].join(
-      '.'
-    )
+    if (options.dir) {
+      runInDirectory(root, options.dir, (filePath) => {
+        if (/\.ast\.json$/.test(filePath)) {
+          print(filePath)
+        }
+      })
+    }
 
-    console.log('[print] write code to:', codeASTFilePath)
-
-    fs.writeFileSync(codeASTFilePath, code, 'utf-8')
-    console.log('[print] write code done!')
+    console.log('---print end---')
+    console.groupEnd()
   })
 
 program.parse()
