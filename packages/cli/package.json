@@ -8,6 +8,9 @@
   },
   "scripts": {},
   "dependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/generator": "^7.27.0",
+    "@babel/parser": "^7.27.0",
     "@swc/core": "^1.11.21",
     "commander": "^13.1.0"
   }

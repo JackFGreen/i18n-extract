@@ -6,6 +6,7 @@
   "license": "ISC",
   "description": "",
   "scripts": {
+    "i18n:transform": "i18n transform src/const/index.js",
     "i18n:parse": "i18n parse src/const/index.js",
     "i18n:print": "i18n print src/const/index.js.ast.json",
     "i18n:parse:dir": "i18n parse -d src",

@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const compile = require('./compile')
+const compile = require('../compile')
 
 function parse(filePath) {
   console.group('[parse] file to AST:', filePath)

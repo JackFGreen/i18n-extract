@@ -1,8 +1,8 @@
 {
   "type": "Module",
   "span": {
-    "start": 98,
-    "end": 289
+    "start": 113,
+    "end": 304
   },
   "body": [
     {
@@ -10,8 +10,8 @@
       "identifier": {
         "type": "Identifier",
         "span": {
-          "start": 107,
-          "end": 109
+          "start": 122,
+          "end": 124
         },
         "ctxt": 2,
         "value": "fn",
@@ -21,42 +21,42 @@
       "params": [],
       "decorators": [],
       "span": {
-        "start": 98,
-        "end": 139
+        "start": 113,
+        "end": 154
       },
       "ctxt": 3,
       "body": {
         "type": "BlockStatement",
         "span": {
-          "start": 112,
-          "end": 139
+          "start": 127,
+          "end": 154
         },
         "ctxt": 3,
         "stmts": [
           {
             "type": "ExpressionStatement",
             "span": {
-              "start": 116,
-              "end": 137
+              "start": 131,
+              "end": 152
             },
             "expression": {
               "type": "CallExpression",
               "span": {
-                "start": 116,
-                "end": 137
+                "start": 131,
+                "end": 152
               },
               "ctxt": 0,
               "callee": {
                 "type": "MemberExpression",
                 "span": {
-                  "start": 116,
-                  "end": 127
+                  "start": 131,
+                  "end": 142
                 },
                 "object": {
                   "type": "Identifier",
                   "span": {
-                    "start": 116,
-                    "end": 123
+                    "start": 131,
+                    "end": 138
                   },
                   "ctxt": 1,
                   "value": "console",
@@ -65,8 +65,8 @@
                 "property": {
                   "type": "Identifier",
                   "span": {
-                    "start": 124,
-                    "end": 127
+                    "start": 139,
+                    "end": 142
                   },
                   "value": "log"
                 }
@@ -77,8 +77,8 @@
                   "expression": {
                     "type": "StringLiteral",
                     "span": {
-                      "start": 128,
-                      "end": 136
+                      "start": 143,
+                      "end": 151
                     },
                     "value": "你好",
                     "raw": "'你好'"
@@ -100,8 +100,8 @@
       "identifier": {
         "type": "Identifier",
         "span": {
-          "start": 150,
-          "end": 152
+          "start": 165,
+          "end": 167
         },
         "ctxt": 2,
         "value": "fn",
@@ -112,21 +112,21 @@
         {
           "type": "Parameter",
           "span": {
-            "start": 153,
-            "end": 165
+            "start": 168,
+            "end": 180
           },
           "decorators": [],
           "pat": {
             "type": "AssignmentPattern",
             "span": {
-              "start": 153,
-              "end": 165
+              "start": 168,
+              "end": 180
             },
             "left": {
               "type": "Identifier",
               "span": {
-                "start": 153,
-                "end": 154
+                "start": 168,
+                "end": 169
               },
               "ctxt": 4,
               "value": "a",
@@ -136,8 +136,8 @@
             "right": {
               "type": "StringLiteral",
               "span": {
-                "start": 157,
-                "end": 165
+                "start": 172,
+                "end": 180
               },
               "value": "哈哈",
               "raw": "'哈哈'"
@@ -147,21 +147,21 @@
         {
           "type": "Parameter",
           "span": {
-            "start": 167,
-            "end": 179
+            "start": 182,
+            "end": 194
           },
           "decorators": [],
           "pat": {
             "type": "AssignmentPattern",
             "span": {
-              "start": 167,
-              "end": 179
+              "start": 182,
+              "end": 194
             },
             "left": {
               "type": "Identifier",
               "span": {
-                "start": 167,
-                "end": 168
+                "start": 182,
+                "end": 183
               },
               "ctxt": 4,
               "value": "b",
@@ -171,8 +171,8 @@
             "right": {
               "type": "StringLiteral",
               "span": {
-                "start": 171,
-                "end": 179
+                "start": 186,
+                "end": 194
               },
               "value": "嘿嘿",
               "raw": "'嘿嘿'"
@@ -182,42 +182,42 @@
       ],
       "decorators": [],
       "span": {
-        "start": 141,
-        "end": 214
+        "start": 156,
+        "end": 229
       },
       "ctxt": 4,
       "body": {
         "type": "BlockStatement",
         "span": {
-          "start": 181,
-          "end": 214
+          "start": 196,
+          "end": 229
         },
         "ctxt": 4,
         "stmts": [
           {
             "type": "ExpressionStatement",
             "span": {
-              "start": 185,
-              "end": 212
+              "start": 200,
+              "end": 227
             },
             "expression": {
               "type": "CallExpression",
               "span": {
-                "start": 185,
-                "end": 212
+                "start": 200,
+                "end": 227
               },
               "ctxt": 0,
               "callee": {
                 "type": "MemberExpression",
                 "span": {
-                  "start": 185,
-                  "end": 196
+                  "start": 200,
+                  "end": 211
                 },
                 "object": {
                   "type": "Identifier",
                   "span": {
-                    "start": 185,
-                    "end": 192
+                    "start": 200,
+                    "end": 207
                   },
                   "ctxt": 1,
                   "value": "console",
@@ -226,8 +226,8 @@
                 "property": {
                   "type": "Identifier",
                   "span": {
-                    "start": 193,
-                    "end": 196
+                    "start": 208,
+                    "end": 211
                   },
                   "value": "log"
                 }
@@ -238,8 +238,8 @@
                   "expression": {
                     "type": "StringLiteral",
                     "span": {
-                      "start": 197,
-                      "end": 205
+                      "start": 212,
+                      "end": 220
                     },
                     "value": "你好",
                     "raw": "'你好'"
@@ -250,8 +250,8 @@
                   "expression": {
                     "type": "Identifier",
                     "span": {
-                      "start": 207,
-                      "end": 208
+                      "start": 222,
+                      "end": 223
                     },
                     "ctxt": 4,
                     "value": "a",
@@ -263,8 +263,8 @@
                   "expression": {
                     "type": "Identifier",
                     "span": {
-                      "start": 210,
-                      "end": 211
+                      "start": 225,
+                      "end": 226
                     },
                     "ctxt": 4,
                     "value": "b",
@@ -285,8 +285,8 @@
     {
       "type": "VariableDeclaration",
       "span": {
-        "start": 216,
-        "end": 227
+        "start": 231,
+        "end": 242
       },
       "ctxt": 0,
       "kind": "const",
@@ -295,14 +295,14 @@
         {
           "type": "VariableDeclarator",
           "span": {
-            "start": 222,
-            "end": 227
+            "start": 237,
+            "end": 242
           },
           "id": {
             "type": "Identifier",
             "span": {
-              "start": 222,
-              "end": 223
+              "start": 237,
+              "end": 238
             },
             "ctxt": 2,
             "value": "a",
@@ -312,8 +312,8 @@
           "init": {
             "type": "NumericLiteral",
             "span": {
-              "start": 226,
-              "end": 227
+              "start": 241,
+              "end": 242
             },
             "value": 1,
             "raw": "1"
@@ -325,8 +325,8 @@
     {
       "type": "VariableDeclaration",
       "span": {
-        "start": 228,
-        "end": 246
+        "start": 243,
+        "end": 261
       },
       "ctxt": 0,
       "kind": "const",
@@ -335,14 +335,14 @@
         {
           "type": "VariableDeclarator",
           "span": {
-            "start": 234,
-            "end": 246
+            "start": 249,
+            "end": 261
           },
           "id": {
             "type": "Identifier",
             "span": {
-              "start": 234,
-              "end": 235
+              "start": 249,
+              "end": 250
             },
             "ctxt": 2,
             "value": "b",
@@ -352,8 +352,8 @@
           "init": {
             "type": "StringLiteral",
             "span": {
-              "start": 238,
-              "end": 246
+              "start": 253,
+              "end": 261
             },
             "value": "啊啊",
             "raw": "'啊啊'"
@@ -365,8 +365,8 @@
     {
       "type": "VariableDeclaration",
       "span": {
-        "start": 247,
-        "end": 289
+        "start": 262,
+        "end": 304
       },
       "ctxt": 0,
       "kind": "const",
@@ -375,14 +375,14 @@
         {
           "type": "VariableDeclarator",
           "span": {
-            "start": 253,
-            "end": 289
+            "start": 268,
+            "end": 304
           },
           "id": {
             "type": "Identifier",
             "span": {
-              "start": 253,
-              "end": 254
+              "start": 268,
+              "end": 269
             },
             "ctxt": 2,
             "value": "c",
@@ -392,15 +392,15 @@
           "init": {
             "type": "BinaryExpression",
             "span": {
-              "start": 257,
-              "end": 289
+              "start": 272,
+              "end": 304
             },
             "operator": "+",
             "left": {
               "type": "Identifier",
               "span": {
-                "start": 257,
-                "end": 258
+                "start": 272,
+                "end": 273
               },
               "ctxt": 2,
               "value": "a",
@@ -409,15 +409,15 @@
             "right": {
               "type": "TemplateLiteral",
               "span": {
-                "start": 261,
-                "end": 289
+                "start": 276,
+                "end": 304
               },
               "expressions": [
                 {
                   "type": "Identifier",
                   "span": {
-                    "start": 271,
-                    "end": 272
+                    "start": 286,
+                    "end": 287
                   },
                   "ctxt": 2,
                   "value": "b",
@@ -426,15 +426,15 @@
                 {
                   "type": "CallExpression",
                   "span": {
-                    "start": 276,
-                    "end": 280
+                    "start": 291,
+                    "end": 295
                   },
                   "ctxt": 0,
                   "callee": {
                     "type": "Identifier",
                     "span": {
-                      "start": 276,
-                      "end": 278
+                      "start": 291,
+                      "end": 293
                     },
                     "ctxt": 2,
                     "value": "fn",
@@ -448,8 +448,8 @@
                 {
                   "type": "TemplateElement",
                   "span": {
-                    "start": 262,
-                    "end": 269
+                    "start": 277,
+                    "end": 284
                   },
                   "tail": false,
                   "cooked": "哈哈-",
@@ -458,8 +458,8 @@
                 {
                   "type": "TemplateElement",
                   "span": {
-                    "start": 273,
-                    "end": 274
+                    "start": 288,
+                    "end": 289
                   },
                   "tail": false,
                   "cooked": "-",
@@ -468,8 +468,8 @@
                 {
                   "type": "TemplateElement",
                   "span": {
-                    "start": 281,
-                    "end": 288
+                    "start": 296,
+                    "end": 303
                   },
                   "tail": true,
                   "cooked": "-哈哈",

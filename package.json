@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "i18n:transform": "pnpm --filter @i18n-extract/playground-js i18n:transform",
     "i18n:parse": "pnpm --filter @i18n-extract/playground-js i18n:parse",
     "i18n:print": "pnpm --filter @i18n-extract/playground-js i18n:print",
     "i18n:parse:dir": "pnpm --filter @i18n-extract/playground-js i18n:parse:dir",
