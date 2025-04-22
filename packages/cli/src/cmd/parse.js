@@ -3,7 +3,7 @@ const path = require('path')
 const compile = require('../compile')
 
 function parse(filePath) {
-  console.group('[parse] file to AST:', filePath)
+  console.log('[parse] file to AST:', filePath)
   const code = fs.readFileSync(filePath, 'utf-8')
 
   const ast = compile.parse({ code })
@@ -16,7 +16,6 @@ function parse(filePath) {
   fs.writeFileSync(astFilePath, str, 'utf-8')
 
   console.log('[parse] write AST done!')
-  console.groupEnd()
 }
 
 module.exports = parse

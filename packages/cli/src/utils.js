@@ -4,7 +4,7 @@ const path = require('path')
 function runInDirectory(dirPath, cb) {
   const files = fs.readdirSync(dirPath)
 
-  console.group('Directory:', dirPath)
+  console.log('Directory:', dirPath)
 
   files.forEach((file) => {
     const filePath = path.join(dirPath, file)
@@ -20,8 +20,6 @@ function runInDirectory(dirPath, cb) {
       cb(filePath)
     }
   })
-
-  console.groupEnd()
 }
 
 module.exports = {

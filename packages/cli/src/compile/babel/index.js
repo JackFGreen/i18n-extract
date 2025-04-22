@@ -1,9 +1,18 @@
 const babelCore = require('@babel/core')
 const babelParser = require('@babel/parser')
 const babelGenerator = require('@babel/generator')
+const myPlugin = require('./plugin')
 
-function transform({ code }) {
-  const m = babelCore.transform(code)
+function transform({ code }, options) {
+  const m = babelCore.transform(code, {
+    generatorOpts: {
+      jsescOption: {
+        // 不转译中文到 unicode
+        minimal: true,
+      },
+    },
+    plugins: [myPlugin(options)],
+  })
   return m
 }
 

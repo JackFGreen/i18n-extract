@@ -14,14 +14,17 @@ program
   .description('Transform code')
   .argument('[file]', 'file path')
   .option('-d, --dir <directory>', 'directory path')
+  .option('--debug', 'console debug log')
   .action((url, options) => {
     const root = process.cwd()
 
-    console.group('---transform start---')
+    console.log('---transform start---')
 
     if (url) {
       const filePath = path.join(root, url)
-      transform(filePath)
+      transform(filePath, {
+        debug: options.debug,
+      })
     }
 
     if (options.dir) {
@@ -31,12 +34,14 @@ program
         if (/\.ast\.json/.test(filePath)) {
           return
         }
-        transform(filePath)
+
+        transform(filePath, {
+          debug: options.debug,
+        })
       })
     }
 
     console.log('---transform end---')
-    console.groupEnd()
   })
 
 program
@@ -47,7 +52,7 @@ program
   .action((url, options) => {
     const root = process.cwd()
 
-    console.group('---parse start---')
+    console.log('---parse start---')
 
     if (url) {
       const filePath = path.join(root, url)
@@ -66,7 +71,6 @@ program
     }
 
     console.log('---parse end---')
-    console.groupEnd()
   })
 
 program
@@ -77,7 +81,7 @@ program
   .action((url, options) => {
     const root = process.cwd()
 
-    console.group('---print start---')
+    console.log('---print start---')
 
     if (url) {
       const filePath = path.join(root, url)
@@ -95,7 +99,6 @@ program
     }
 
     console.log('---print end---')
-    console.groupEnd()
   })
 
 program.parse()

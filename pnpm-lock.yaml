@@ -19,6 +19,9 @@ importers:
       '@babel/parser':
         specifier: ^7.27.0
         version: 7.27.0
+      '@babel/types':
+        specifier: ^7.27.0
+        version: 7.27.0
       '@swc/core':
         specifier: ^1.11.21
         version: 1.11.21

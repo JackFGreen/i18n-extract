@@ -9,6 +9,7 @@
     "i18n:transform": "i18n transform src/const/index.js",
     "i18n:parse": "i18n parse src/const/index.js",
     "i18n:print": "i18n print src/const/index.js.ast.json",
+    "i18n:transform:dir": "i18n transform -d src --debug",
     "i18n:parse:dir": "i18n parse -d src",
     "i18n:print:dir": "i18n print -d src"
   },

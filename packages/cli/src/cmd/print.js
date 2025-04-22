@@ -3,7 +3,7 @@ const path = require('path')
 const compile = require('../compile')
 
 function print(filePath) {
-  console.group('[print] AST file to code:', filePath)
+  console.log('[print] AST file to code:', filePath)
   const ast = fs.readFileSync(filePath, 'utf-8')
 
   const { code } = compile.print({ ast: JSON.parse(ast) })
@@ -21,7 +21,6 @@ function print(filePath) {
   fs.writeFileSync(codeASTFilePath, code, 'utf-8')
 
   console.log('[print] write code done!')
-  console.groupEnd()
 }
 
 module.exports = print
