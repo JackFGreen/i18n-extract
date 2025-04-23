@@ -1,14 +1,14 @@
 {
-  "name": "@i18n-extract/playground-js",
+  "name": "@i18n-extract/playground-jsx",
   "version": "0.1.0",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "scripts": {
-    "i18n:transform": "i18n transform src/const/index.js",
-    "i18n:parse": "i18n parse src/const/index.js",
-    "i18n:print": "i18n print src/const/index.js.ast.json",
+    "i18n:transform": "i18n transform src/jsx/index.jsx",
+    "i18n:parse": "i18n parse src/jsx/index.jsx",
+    "i18n:print": "i18n print src/jsx/index.jsx.ast.json",
     "i18n:transform:dir": "i18n transform -d src",
     "i18n:parse:dir": "i18n parse -d src",
     "i18n:print:dir": "i18n print -d src"

@@ -2,11 +2,18 @@ const fs = require('fs')
 const path = require('path')
 const compile = require('../compile')
 
-function print(filePath) {
+function print(filePath, options) {
   console.log('[print] AST file to code:', filePath)
   const ast = fs.readFileSync(filePath, 'utf-8')
 
-  const { code } = compile.print({ ast: JSON.parse(ast) })
+  const { code } = compile.print(
+    { ast: JSON.parse(ast) },
+    {
+      ...options,
+      file: filePath,
+      ext: path.extname(filePath),
+    }
+  )
 
   const originFilePath = filePath.replace('.ast.json', '')
   const originFileNames = originFilePath.split('.')

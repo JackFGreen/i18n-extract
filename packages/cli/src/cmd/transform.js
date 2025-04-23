@@ -8,7 +8,14 @@ function transform(filePath, options) {
   console.log('[transform] from file:', filePath)
   const oldCode = fs.readFileSync(filePath, 'utf-8')
 
-  const { code } = compile.transform({ code: oldCode }, options)
+  const { code } = compile.transform(
+    { code: oldCode },
+    {
+      ...options,
+      file: filePath,
+      ext: path.extname(filePath),
+    }
+  )
 
   if (debug) {
     console.log('[transform] from code:', code)

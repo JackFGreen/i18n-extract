@@ -19,6 +19,9 @@ importers:
       '@babel/parser':
         specifier: ^7.27.0
         version: 7.27.0
+      '@babel/traverse':
+        specifier: ^7.27.0
+        version: 7.27.0
       '@babel/types':
         specifier: ^7.27.0
         version: 7.27.0
@@ -30,6 +33,12 @@ importers:
         version: 13.1.0
 
   playground/js:
+    devDependencies:
+      '@i18n-extract/cli':
+        specifier: workspace:*
+        version: link:../../packages/cli
+
+  playground/jsx:
     devDependencies:
       '@i18n-extract/cli':
         specifier: workspace:*

@@ -49,6 +49,7 @@ program
   .description('Parse code to AST')
   .argument('[file]', 'file path')
   .option('-d, --dir <directory>', 'directory path')
+  .option('--debug', 'console debug log')
   .action((url, options) => {
     const root = process.cwd()
 
@@ -56,7 +57,9 @@ program
 
     if (url) {
       const filePath = path.join(root, url)
-      parse(filePath)
+      parse(filePath, {
+        debug: options.debug,
+      })
     }
 
     if (options.dir) {
@@ -66,7 +69,9 @@ program
         if (/\.ast\.json/.test(filePath)) {
           return
         }
-        parse(filePath)
+        parse(filePath, {
+          debug: options.debug,
+        })
       })
     }
 
@@ -78,6 +83,7 @@ program
   .description('Print AST to code')
   .argument('[file]', 'file path')
   .option('-d, --dir <directory>', 'directory path')
+  .option('--debug', 'console debug log')
   .action((url, options) => {
     const root = process.cwd()
 
@@ -85,7 +91,9 @@ program
 
     if (url) {
       const filePath = path.join(root, url)
-      print(filePath)
+      print(filePath, {
+        debug: options.debug,
+      })
     }
 
     if (options.dir) {
@@ -93,7 +101,9 @@ program
 
       runInDirectory(dirPath, (filePath) => {
         if (/\.ast\.json$/.test(filePath)) {
-          print(filePath)
+          print(filePath, {
+            debug: options.debug,
+          })
         }
       })
     }
