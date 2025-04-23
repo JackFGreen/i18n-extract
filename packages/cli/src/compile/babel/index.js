@@ -7,6 +7,7 @@ function transform({ code }, options) {
   const m = babelCore.transform(code, {
     generatorOpts: {
       jsescOption: {
+        quotes: 'single',
         // 不转译中文到 unicode
         minimal: true,
       },

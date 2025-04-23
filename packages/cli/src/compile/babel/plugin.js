@@ -30,7 +30,7 @@ function myPlugin(options) {
           )
         }
 
-        if (t.isCallExpression(path.parent)) {
+        if (t.isCallExpression(path.parent) || t.isOptionalCallExpression(path.parent)) {
           if (path.parent.callee.name === '$t') {
             return
           }
@@ -51,6 +51,12 @@ function myPlugin(options) {
               },
             }).code
           )
+        }
+
+        if (t.isCallExpression(path.parent) || t.isOptionalCallExpression(path.parent)) {
+          if (path.parent.callee.name === '$t') {
+            return
+          }
         }
 
         const hasStr = path.node.quasis.find(

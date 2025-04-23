@@ -6,6 +6,9 @@ const s5 = `换1\n行`
 const s6 = `换2\\n行`
 const str = '测试'
 const strCall = $t('测试 call')
+const strOptionalCall = $t?.('测试 optional call')
+const strTplCall = $t(`测试 tpl call`)
+const strTplOptionalCall = $t?.(`测试 tpl optional call`)
 // 这是注释1
 // 这是注释2
 /** 这是注释3 */
@@ -19,4 +22,4 @@ const g = false ? 0 : `三元 right 侧`
 const 中文变量 = '中文变量 value'
 
 const st = `第一行 ${42} ${str}
-第二行 ${"important"}`
+第二行 ${'important'}`
