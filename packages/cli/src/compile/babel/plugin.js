@@ -6,7 +6,6 @@ function cleanComments(path) {
   if (path.node.leadingComments) {
     // 确保每个注释只附加到一个节点
     path.node.leadingComments.forEach((comment) => {
-      // console.log('comment', comment)
       if (comment.leading) {
         // 如果注释已经被附加到其他节点，移除它
         if (comment.attached) {
