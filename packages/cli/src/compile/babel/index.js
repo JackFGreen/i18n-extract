@@ -22,6 +22,10 @@ function parse({ code }, options) {
     plugins.push('typescript')
   }
 
+  if (options.ext === '.tsx') {
+    plugins.push('typescript', 'jsx')
+  }
+
   const m = babelParser.parse(code, {
     plugins,
   })

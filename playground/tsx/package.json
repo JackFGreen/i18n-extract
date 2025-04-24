@@ -1,0 +1,19 @@
+{
+  "name": "@i18n-extract/playground-tsx",
+  "version": "0.1.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "i18n:transform": "i18n transform src/tsx/index.tsx",
+    "i18n:parse": "i18n parse src/tsx/index.tsx",
+    "i18n:print": "i18n print src/tsx/index.tsx.ast.json",
+    "i18n:transform:dir": "i18n transform -d src",
+    "i18n:parse:dir": "i18n parse -d src",
+    "i18n:print:dir": "i18n print -d src"
+  },
+  "devDependencies": {
+    "@i18n-extract/cli": "workspace:*"
+  }
+}
