@@ -38,14 +38,7 @@ function gen$t(s) {
 }
 
 function replaceStringLiteral(path) {
-  if (t.isCallExpression(path.parent) || t.isOptionalCallExpression(path.parent)) {
-    if (path.parent.callee.name === '$t') {
-      return
-    }
-  }
-
   const $t = gen$t(path.node.value)
-
   path.replaceWith($t)
 }
 
@@ -85,6 +78,12 @@ function replaceTemplateLiteral(path) {
   path.replaceWith(literal)
 }
 
+function replaceJSXText(path) {
+  const $t = gen$t(path.node.value)
+  const expr = t.jsxExpressionContainer($t)
+  path.replaceWith(expr)
+}
+
 /**
  *
  * TemplateLiteral => TemplateElement.{value.cooked | value.raw}
@@ -101,7 +100,11 @@ function myPlugin(options) {
       enter(path) {
         cleanComments(path)
 
-        if (!t.isStringLiteral(path.node) && !t.isTemplateLiteral(path.node)) {
+        if (
+          !t.isStringLiteral(path.node) &&
+          !t.isTemplateLiteral(path.node) &&
+          !t.isJSXText(path.node)
+        ) {
           return
         }
 
@@ -127,12 +130,13 @@ function myPlugin(options) {
         if (t.isStringLiteral(path.node)) {
           replaceStringLiteral(path)
         }
+
         if (t.isTemplateLiteral(path.node)) {
           replaceTemplateLiteral(path)
         }
 
         if (t.isJSXText(path.node)) {
-        
+          replaceJSXText(path)
         }
       },
     },

@@ -1,5 +1,5 @@
 // JSXText
-const jsx1 = <div>这是div</div>;
+const jsx1 = <div>{$t('这是div')}</div>;
 // JSXExpressionContainer => StringLiteral
 const jsx2 = <div>{$t('这是str div')}</div>;
 // JSXExpressionContainer => TemplateLiteral => TemplateElement
